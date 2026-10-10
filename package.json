@@ -1,0 +1,18 @@
+{
+  "name": "chuyen-doi-css-sang-sass",
+  "version": "1.0.0",
+  "description": "[Thực hành] Chuyển đổi CSS có sẵn sang SASS theo chuẩn - CodeGym",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass main.scss main.css",
+    "watch": "sass main.scss main.css --watch",
+    "build:dir": "sass scss/main.scss css/main.css",
+    "watch:dir": "sass scss/main.scss css/main.css --watch"
+  },
+  "keywords": ["sass", "scss", "css-to-sass", "architecture", "codegym"],
+  "author": "HueAn14",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}

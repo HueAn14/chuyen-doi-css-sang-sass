@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Thực hành] Chuyển đổi CSS có sẵn sang SASS theo chuẩn</title>
+  <!-- Nhúng file CSS được biên dịch từ SASS (main.css) -->
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Bổ sung một số style phụ trợ hiển thị rõ ràng */
+    .header-demo {
+      text-align: center;
+      margin: 40px 0 30px;
+    }
+    .grid-demo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card-actions {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-demo">
+      <h1>Chuyển Đổi CSS Có Sẵn Sang SASS Chuẩn</h1>
+      <p>Ứng dụng cấu trúc phân tách thư mục: abstracts, base, layout, components</p>
+    </div>
+
+    <div class="grid-demo">
+      <div class="card">
+        <h3>Card 1: Biến & Hằng số (Variables)</h3>
+        <p>Tách các giá trị màu sắc, border, shadow thành <code>_variables.scss</code> để quản trị tập trung và dễ bảo trì.</p>
+        <div class="card-actions">
+          <button class="button">Chi tiết</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Card 2: Mixin Tái Sử Dụng</h3>
+        <p>Sử dụng <code>@mixin button-style</code> và <code>@mixin box-shadow</code> để tái sử dụng mã CSS linh hoạt với tham số.</p>
+        <div class="card-actions">
+          <button class="button">Khám phá</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Card 3: Kiến Trúc Thư Mục Chuẩn</h3>
+        <p>Mã nguồn được phân chia rõ ràng theo <code>abstracts/</code>, <code>base/</code>, <code>layout/</code>, <code>components/</code> và gộp vào <code>main.scss</code>.</p>
+        <div class="card-actions">
+          <button class="button">Xem thêm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
